@@ -1,6 +1,38 @@
-table {
-    table-layout: auto;
-    margin: 20px;
-    height: 500px;
-    width: 350px;
+.calc {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+.output {
+    border-radius: 4px;
+    font-size: 4rem;
+    text-align: end;
+    background-color: rgb(80, 185, 136);
+    padding: 0.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 0.75rem;
+    column-gap: 0.5rem;
+}
+
+.key {
+    font-size: 3rem;
+    background-color: rgb(131, 177, 158);
+    border-radius: 4px;
+}
+
+.equal {
+    grid-column: 4 / 5;
+    grid-row: 2 / span 4;
+    background-color: rgb(187, 77, 50);
+}
+
+.operator {
+    background-color: rgb(204, 138, 83);
 }
