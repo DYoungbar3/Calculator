@@ -40,5 +40,3 @@ const keyChildren = Array.from(keysParent.children);
 const keyIds = keyChildren.map(element => {
     return element.id;
 });
-
-console.log(keyIds);
