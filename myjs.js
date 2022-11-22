@@ -33,3 +33,12 @@ function operate(operator, first, second) {
         return divide(first, second);
     };
 }
+
+const keysParent = document.getElementById('keys');
+const keyChildren = Array.from(keysParent.children);
+
+const keyIds = keyChildren.map(element => {
+    return element.id;
+});
+
+console.log(keyIds);
