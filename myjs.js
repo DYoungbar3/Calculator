@@ -34,9 +34,17 @@ function operate(operator, first, second) {
     };
 }
 
-const keysParent = document.getElementById('keys');
-const keyChildren = Array.from(keysParent.children);
+let first;
+let second;
+let operator;
 
-const keyIds = keyChildren.map(element => {
-    return element.id;
-});
+const numButtons = document.querySelectorAll('.num');
+const operatorButtons = document.querySelectorAll('.operator');
+const equalButton = document.querySelector('.equal');
+const acButton = document.querySelector('.AC');
+
+numButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        
+    })
+})
